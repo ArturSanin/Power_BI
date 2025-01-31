@@ -1,0 +1,1 @@
+This folder contains documentations for Power BI in German.
