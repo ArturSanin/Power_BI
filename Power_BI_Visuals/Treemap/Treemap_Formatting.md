@@ -1,18 +1,18 @@
 # Built visual
 
-### Legend: {Some data}
+### Category: {Some column}
 
 
-### Values: {Some data}
+### Details: {Some column}
 
 
-### Destails: {Some data}
+### Values: {Some measure}
 
 
-### Tooltips: {Some data}
+### Tooltips: {Some measures}
 
 
-### Drill through:
+### Drill through
 
 #### Cross-report: {On, Off}
 
@@ -28,12 +28,12 @@
 
 ## Legend: {On, Off}
 
-### Options 
+### Options
 
 #### Position: {Top left, Top center, Top right, Top left stacked, Top right stacked, Center left, Center right, Bottom left, Bottom center, Bottom right}
 
 
-### Text 
+### Text
 
 #### Font
 
@@ -47,49 +47,56 @@
 
 ##### Bold, Italic, Underline
 
-#### Text color: {Some color}, Conditional formatting
+
+#### Color: {Some color}, Conditional formatting
 
 
-### Title 
+### Title: {On, Off}
 
 #### Title text: {Some text}
+
 
 ### Reset to default
 
 
 
-## Slices 
+## Colors
 
-### Colors
-
-#### Column: {Some color}
-
-#### Column: {Some color}
-
-#### .
-
-#### .
-
-#### .
-
-#### Column: {Some color}
+### Category_1: {Some color}
 
 
-### Spacing
+### Category_2: {Some color}
 
-#### Inner radius: {0% - 99%}
+
+### .
+
+
+### .
+
+
+### .
+
+
+### Category_n: {Some color}
 
 
 
-## Details labels: {On, Off}
+## Layout
 
-### Options
+### Tiling Method: {Squarified, Binary, Alternating (Columns, Rows)}
 
-#### Position: {Outside, Inside, Prefer outside, Prefer inside}
 
-#### Overflow text: {On, Off}
+### Space between all nodes: {0px - 10px}
 
-#### Label contents: {Category, Data value, Percent of total, Category, data value, Category, percent of total, Data value, percent of total, All detail labels}
+
+### Space between groups: {0px - 10px}
+
+
+### Reset to default
+
+
+
+## Data labels: {On, Off}
 
 ### Values
 
@@ -105,23 +112,35 @@
 
 ##### Bold, Italic, Underline
 
-#### Color: {Some color}, Conditional formatting
-
-#### Background: {}
+#### Color: {Some color}, Conditional formatting 
 
 #### Display units: {Auto, None, Thousands, Millions, Billions, Trillions}
 
 #### Value decimal places: {Auto, 0 - 15}
 
-#### Percantage decimal places: {Auto, 0 - 15}
 
 ### Reset to default
 
 
 
-## Rotation
+## Category labels: {On, Off}
 
-### Rotation: {0° - 360°} 
+### Values
+
+#### Font
+
+##### Fonts: {Arial, Arial Black, Arial Unicode MS, Calibri, Cambria, Cambria Math, 
+##### Candara, Comic Sans MS, Consolas, Constantia, Corbel, Courier New, DIN, 
+##### DIN Light, Georgia, Lucida Sans Unicode, Segoe UI, Segoe UI light, 
+##### Segoe UI Semibold, Segoe UI Bold, Symbol, Tahoma, Times New Roman,
+##### Trebuchet MS, Verdana, Wingdings} 
+
+##### Font size: {8 - 60}
+
+##### Bold, Italic, Underline
+
+#### Color: {Some color}, Conditional formatting 
+
 
 ### Reset to default
 

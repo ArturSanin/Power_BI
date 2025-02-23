@@ -163,7 +163,7 @@
 
 ### Format options
 
-#### Format:{Depending on the datatype of the data}
+#### Format: {Depending on the datatype of the data}
 
 
 ### Reset to default
