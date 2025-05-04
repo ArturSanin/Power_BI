@@ -7,6 +7,15 @@ Users can choose whether the filter should apply only to the current report page
 ## Aggregation
 Aggregation is the process of summarizing a set of data into a single value. Common aggregations include summing, counting, calculating the maximum, or minimum.
 
+## Aggregation Function
+Eine Aggregationsfunktion ist eine Funktion, die eine Datenmenge oder Datengruppe zu einem einzelnen Wert zusammenfasst. Typische Aggregationsfunktionen sind Summe, Durchschnitt, Anzahl, Minimum und Maximum. Sie werden häufig zur Analyse und Verdichtung von Daten in Berichten eingesetzt.
+
+## Aggregations Table
+An aggregation table is a table created from a detailed fact table by aggregating its data (e.g., summing or counting). This reduces large data volumes and can significantly improve report performance, as fewer data need to be processed.
+
+## App (Power BI Service)
+An App in the Power BI Service is a collection of dashboards, reports, and semantic models (datasets) that can be grouped together and shared with users or groups. Apps provide an organized and accessible way to deliver a complete analytics environment.
+
 # B
 
 ## Bridge Table
@@ -32,9 +41,11 @@ A connector in Power BI is a connection solution that allows Power BI to access 
 
 # D
 
+## Dashboard (Power BI Service)
+A dashboard in the Power BI service is a single-page overview composed of tiles from various reports or datasets. Dashboards are used to summarize and monitor key metrics, provide quick insights and can only be created in the Power BI service.
+
 ## Data pane
 The Data Pane in Power BI Desktop is the panel on the right side of the interface that displays all tables, columns, measures, and hierarchies from the data model. Users can drag and drop these fields into visualizations. The Data Pane offers quick access to all model objects.
-
 
 ## DAX query view
 The DAX Query View is a dedicated interface for writing and evaluating DAX queries. It’s used to test custom DAX expressions.
@@ -55,6 +66,12 @@ Drilldown is an interactive feature in Power BI that allows to navigate through 
 
 # E
 
+## Enter Data 
+The “Enter Data” option in Power BI Desktop allows users to manually create a new table by typing data directly into an input grid. This feature is useful for quickly adding reference tables, parameter values, or sample data to the data model without needing an external data source. The created table is automatically added to the model and can be used like any other table for relationships, visualizations, and DAX calculations.
+
+## Explicit Measure
+An explicit measure is a user-defined or Power BI-generated named calculation based on a DAX expression. It is manually created (or via a Quick Measure) and appears in the Fields pane for reuse in visuals.
+
 # F
 
 ## Fact Table
@@ -62,6 +79,20 @@ A fact table contains the measurable values (also called facts) of a business, s
 
 ## Field
 A field is a single column within a table. In Power BI, the term “field” is often used interchangeably with “column”, especially in the context of visualizations.
+
+## Filter Card
+A filter card is a field placed in the filter pane that acts as a filter on the visual, page, or report level. It supports different filtering types:
+
+- **Basic filtering:** Selecting individual values to filter data.
+- **Advanced filtering:** Filtering by specific criteria such as “greater than,” “contains,” “starts with,” etc.
+- **Top N:** Displays the top or bottom N values based on a specific measure. This filter type is only available for filter cards applied on the visual level.
+
+## Filter Pane
+The filter pane is a section in the report view interface of Power BI, where fields can be placed to act as filters. The filter pane is divided into three parts:
+
+- **Filters on this visual:** Apply only to the currently selected visual.
+- **Filters on this page:** Apply to all visuals on the current report page.
+- **Filters on all pages:** Apply across all visuals in the entire report.
 
 ## Flat Schema
 A flat schema is a data modeling concept in which all facts and dimensions are combined into a single, denormalized table. There are no separate dimension tables – all information resides in one central table. Excel or CSV data sources are typical examples of this schema.
@@ -73,6 +104,9 @@ A foreign key is a column or a combination of columns in a table that refers to 
 
 ## Galaxy Schema (Fact Constellation Schema)
 The galaxy schema is a data modeling concept that consists of multiple fact tables sharing common dimension tables. This shared structure enables the analysis of different facts across the same dimensions.
+
+## Get Data
+The “Get Data” option on the Home tab (e. g. in Report view) in Power BI Desktop is the main entry point for connecting to various data sources. This feature allows users to select one or more data sources, such as files (e.g., Excel, CSV), databases, online services, or cloud platforms.
 
 ## Granularity
 Granularity refers to the level of detail in a data model or table. For example, a table that records each individual sale has a higher granularity (i.e., is more detailed) than a table that summarizes daily sales. Using aggregations, it's possible to move from high granularity to lower granularity, but not the other way around.
@@ -100,6 +134,9 @@ A hybrid table in Power BI is a table that combines multiple storage modes, typi
 
 # I
 
+## Implicit Measure
+An implicit measure is automatically generated by Power BI when a numeric column is added to a visual. Power BI applies an aggregation function (like SUM, COUNT, AVERAGE) without explicitly defining a measure. Implicit measures are not reusable and are more limited than explicit ones.
+
 ## Import Mode
 The import mode is a storage mode in which data from the source is loaded and stored directly in Power BI. All data is present within the Power BI model, allowing for fast query performance since no external source connection is required during use.
 
@@ -114,6 +151,9 @@ Incremental refresh is a Power BI feature that updates only new or modified data
 # K
 
 # L
+
+## Lock Filter (Filter Card)
+Lock filter is an option within a filter card in Power BI’s filter pane. When enabled, it prevents end users from changing or removing the respective filter in a published report in the Power BI Service. This feature is useful to ensure that specific filtering conditions — such as those used for data security or analytical consistency — remain enforced and cannot be altered by viewers.
 
 # M
 
@@ -142,8 +182,17 @@ Normalization is a process in data modeling used to eliminate redundancy (duplic
 A page-level filter in Power BI is a filter that applies only to a single report page. It is configured in the filter pane under the “Filters on this page” section and affects all visuals on that specific page, but not visuals on other pages of the report.
 This type of filter is ideal for report pages with a specific focus or target audience.
 
+## Paginated Report
+A paginated report is a pixel-perfect, page-based report format optimized for printing or exporting lengthy, detailed content such as invoices or lists. It’s created using Power BI Report Builder and published to the Power BI service. Unlike regular Power BI reports, paginated reports are not interactive and are designed for precise formatting.
+
 ## Partition
 A partition is a logically separated segment of a table that can be loaded, processed, and refreshed independently. Partitions help improve data processing efficiency, as only certain parts of a table (e.g., recent data) need frequent updates, while others (e.g., historical data) remain static. In Power BI, partitions are especially used with large tables or hybrid tables to enhance performance and data freshness.
+
+## Power BI Report (Report)
+A report in Power BI consists of one or more pages with interactive visualizations based on a semantic model (dataset). Reports offer powerful filtering and drill-down capabilities and are built in Power BI Desktop before being published to the Power BI service.
+
+## Power BI-Dataset (Dataset)
+A Power BI dataset is the original term for what is now officially called a semantic model. It represents the core data structure in Power BI, containing all imported or connected data, relationships, measures, calculations, roles, and metadata. A dataset can be reused across multiple reports and shared via the Power BI service.
 
 ## Power Query Editor
 The Power Query Editor is a graphical interface in Power BI used to import, clean, and transform data. All transformations performed in the editor are recorded in the background using the M language (Power Query Formula Language) and are automatically applied when the data is refreshed.
@@ -155,6 +204,9 @@ A primary key is a column or a combination of columns that uniquely identifies e
 
 ## Query (Power Query)
 A query in Power BI (Power Query) is a step-by-step instruction set used to load, transform, and prepare data from a source for the data model. Each query consists of a series of transformations shown as individual steps. Queries can be linked, filtered, grouped, or combined and serve as the foundation for the resulting tables in the data model.
+
+## Quick Measure
+A Quick Measure is a predefined DAX pattern in Power BI, created through a visual interface. It allows users to easily generate common calculations like difference, percent of total, running total, or rank without writing DAX manually. In the background, it creates an explicit measure.
 
 # R  
 
@@ -188,8 +240,13 @@ The Table view displays the data in your tables (from your Power BI data model) 
 ## Tabular Model 
 A tabular model is a data model where data is structured and organized into tables. In Power BI, every data model is a tabular model, as data is stored in tables and relationships between these tables are defined.
 
+## Template App (Power BI Service)
+A Template App is a pre-built Power BI app that contains a predefined collection of dashboards, reports, and data models, usually provided by Microsoft or third-party vendors. These apps are typically designed for specific industries or use cases and enable quick integration and analysis of data.
 
-# U  
+## Tile
+A tile is a building block of a dashboard in the Power BI service. Tiles can contain visualizations, KPIs, text boxes, images, or even entire report pages sourced from different reports or datasets. They provide a clear way to display information and can be individually formatted and positioned.
+
+# U 
 
 # V  
 

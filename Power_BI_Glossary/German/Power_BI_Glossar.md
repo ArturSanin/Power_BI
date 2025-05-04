@@ -6,6 +6,15 @@ Eine Abfrage in Power BI (Power Query) ist eine Schritt-für-Schritt-Anweisung, 
 ## Aggregation
 Aggregation ist der Vorgang, bei dem eine Datenmenge auf einen einzigen Wert zusammengefasst wird. Typische Aggregationen sind zum Beispiel das Summieren, Zählen, Ermitteln des Maximums oder Minimums.
 
+## Aggregationsfunktion
+Eine Aggregationsfunktion ist eine Funktion, die eine Datenmenge oder Datengruppe zu einem einzelnen Wert zusammenfasst. Typische Aggregationsfunktionen sind Summe, Durchschnitt, Anzahl, Minimum und Maximum. Sie werden häufig zur Analyse und Verdichtung von Daten in Berichten eingesetzt.
+
+## Aggregationstabelle
+Eine Aggregationstabelle ist eine Tabelle, die auf Basis einer detaillierten Faktentabelle erstellt wird, indem die darin enthaltenen Daten aggregiert (z. B. summiert oder gezählt) werden. Dadurch werden große Datenmengen reduziert, was die Performance von Berichten deutlich verbessern kann, da weniger Daten verarbeitet werden müssen.
+
+## App (Power BI-Dienst)
+Eine App im Power BI-Dienst ist eine Sammlung von Dashboards, Berichten und semantischen Modellen (Datasets), die zusammengefasst und für Benutzer oder Gruppen freigegeben werden können. Apps bieten eine organisierte und zugängliche Möglichkeit, eine komplette Analyseumgebung bereitzustellen. 
+
 ## Aus Modell löschen
 „Aus Modell löschen“ ist eine Option im Kontextmenü von Tabellen, Spalten oder Measures in Power BI. Mit dieser Funktion wird das ausgewählte Objekt dauerhaft aus dem Datenmodell entfernt. Diese Aktion löscht das Objekt nur aus dem Modell, nicht jedoch aus der Datenquelle. Sie ist besonders hilfreich zur Bereinigung und Optimierung des Datenmodells.
 
@@ -44,6 +53,15 @@ Der Canvas ist der Bereich einer Berichtsseite in Power BI, in den Visualisierun
 
 # D
 
+## Dashboard (Power BI-Dienst)
+Ein Dashboard im Power BI-Dienst ist eine einseitige Übersicht, die Kacheln aus verschiedenen Berichten oder Datasets enthält. Dashboards dienen der Zusammenfassung und Überwachung wichtiger Kennzahlen (KPIs) und ermöglichen einen schnellen Überblick und werden nur im Power BI-Dienst erstellt.
+
+## Daten abrufen
+Die Option „Daten abrufen“ (Registerkarte Start in z. B. Berichtsansicht) in Power BI Desktop ist der Einstiegspunkt, um Daten aus einer Vielzahl von Quellen mit Power BI zu verbinden. Über diese Funktion kann man eine oder mehrere Datenquellen auswählen, darunter Dateien (wie Excel oder CSV), Datenbanken, Onlinedienste oder Cloud-Plattformen. 
+
+## Daten eingeben
+Die Option „Daten eingeben“ in Power BI Desktop ermöglicht es, manuell eine neue Tabelle zu erstellen, indem Daten direkt über eine Eingabemaske eingegeben werden. Diese Funktion ist nützlich, um kleine Referenztabellen, Parameterwerte oder Beispieldaten schnell ins Datenmodell einzufügen – ohne eine externe Datenquelle zu benötigen. Die erstellte Tabelle wird automatisch ins Datenmodell geladen und kann wie jede andere Tabelle für Beziehungen, Visualisierungen und DAX-Berechnungen verwendet werden.
+
 ## Datenbereich (Data Pane)
 Der Datenbereich (engl. Data Pane) in Power BI Desktop ist der Bereich auf der rechten Seite der Benutzeroberfläche, in dem alle Tabellen, Spalten, Measures und Hierarchien des Datenmodells angezeigt werden. Aus diesem Bereich können Felder per Drag-and-drop in Visualisierungen gezogen werden. Der Datenbereich bietet direkten Zugriff auf alle Modellobjekte.
 
@@ -61,6 +79,9 @@ Drilldown ist eine Interaktionsfunktion in Power BI, mit der man in hierarchisch
 
 # E
 
+## Explizites Measure
+Ein explizites Measure ist ein vom Benutzer oder von Power BI erstelltes benanntes Maß, das auf einem DAX-Ausdruck basiert. Sie wird manuell erstellt oder z. B. durch ein Quickmeasure erzeugt. Explizite Measures sind im Felderbereich sichtbar und können gezielt in Visuals gezogen werden.
+
 # F
 
 ## Faktentabelle
@@ -75,6 +96,23 @@ Ein Filter auf Berichtsebene ist ein Filter, der sich auf alle Seiten eines Powe
 ## Filter auf Seitenebene
 Ein Filter auf Seitenebene ist ein Filter in Power BI, der sich ausschließlich auf eine einzelne Berichtsseite auswirkt. Er wird im Filterbereich unter dem Abschnitt „Filter für diese Seite“ konfiguriert und beeinflusst alle Visuals auf der jeweiligen Seite, jedoch nicht die übrigen Seiten des Berichts.
 Diese Filterart eignet sich ideal für Seiten mit einem speziellen Fokus oder Zielpublikum.
+
+## Filter sperren (Filterkarte)
+Filter sperren ist eine Option innerhalb einer Filterkarte im Filterbereich von Power BI. Wird diese Option aktiviert, kann der jeweilige Filter in einem veröffentlichten Bericht im Power BI-Dienst nicht mehr vom Endnutzer verändert oder entfernt werden. Diese Funktion ist nützlich, um sicherzustellen, dass bestimmte Filterbedingungen – z. B. zur Datenberechtigung oder Analysegenauigkeit dauerhaft erhalten bleiben und nicht versehentlich oder absichtlich angepasst werden.
+
+## Filterbereich
+Der Filterbereich ist ein Abschnitt in der Benutzeroberfläche der Berichtsansicht von Power BI. In diesem Bereich können Felder abgelegt werden, um als Filter zu wirken. Der Filterbereich gliedert sich in drei Abschnitte:
+
+- **Filter für dieses Visual:** Wirkt nur auf das aktuell ausgewählte Visual.
+- **Filter für diese Seite:** Gilt für alle Visuals auf der aktuellen Berichtsseite.
+- **Filter für alle Seiten:** Wirkt auf alle Visuals in allen Seiten des Berichts.
+
+## Filterkarte
+Eine Filterkarte ist ein im Filterbereich abgelegtes Feld, das als Filter auf Visualebene, Seitenebene oder Berichtsebene wirkt. Sie dient der gezielten Einschränkung von Daten und unterstützt verschiedene Filtertypen:
+
+- **Einfaches Filtern:** Auswahl einzelner Werte zur Filterung.
+- **Erweiterte Filterung:** Filterung nach definierten Kriterien wie „größer als“, „enthält“ etc.
+- **Top N:** Zeigt die obersten oder untersten N Werte basierend auf einer Kennzahl. Diese Filteroption steht ausschließlich bei Filterkarten auf Visualebene zur Verfügung.
 
 ## Flaches Schema
 Ein flaches Schema ist ein Modellierungskonzept, bei dem alle Fakten und Dimensionen in einer einzigen, nicht normalisierten Tabelle zusammengeführt sind. Es gibt keine separaten Dimensionstabellen – alle Informationen befinden sich in einer zentralen Tabelle. Typische Beispiele für dieses Schema sind Excel- oder CSV-Datenquellen.
@@ -110,6 +148,9 @@ Eine Hybridtabelle in Power BI ist eine Tabelle, die mehrere Speichermodi kombin
 
 # I
 
+## Implizites Measure
+Ein implizites Measure wird automatisch von Power BI erzeugt, wenn man ein numerisches Feld in ein Visual zieht. Power BI wendet dabei automatisch eine Aggregationsfunktion wie SUMME, ANZAHL oder DURCHSCHNITT an. Sie ist nicht separat im Modell definiert und bietet weniger Flexibilität und Wiederverwendbarkeit als explizite Measures.
+
 ## Import-Modus
 Der Import-Modus ist ein Speichermodus, bei dem die Daten aus der Quelle in Power BI geladen und dort gespeichert werden. Alle Daten sind direkt im Power BI-Modell vorhanden, was eine schnelle Abfrageleistung ermöglicht, da keine Verbindung zur externen Quelle während der Nutzung erforderlich ist.
 
@@ -125,7 +166,10 @@ Die inkrementelle Aktualisierung ist eine Funktion in Power BI, mit der nur neue
 
 # K
 
- ## Konnektor
+## Kachel
+Eine Kachel ist ein Baustein eines Dashboards im Power BI-Dienst. Kacheln können Visualisierungen, KPIs (Kennzahlen), Textfelder, Bilder oder sogar ganze Berichtsseiten enthalten, die aus verschiedenen Berichten oder Datasets stammen. Sie ermöglichen eine übersichtliche Darstellung von Informationen und können individuell formatiert und positioniert werden.
+
+## Konnektor
 Ein Konnektor in Power BI ist eine Verbindungslösung, mit der Power BI auf eine bestimmte Datenquelle zugreifen und Daten daraus laden kann. Damit können Daten aus einer Vielzahl von Datenquellen in das Power BI-Datenmodell integriert werden. 
 
 
@@ -154,8 +198,17 @@ Normalisierung ist ein Verfahren in der Datenmodellierung, bei dem Redundanzen (
 
 # P  
 
+## Paginierter Bericht
+Ein paginierter Bericht ist ein formatierter Bericht im Pixel-Layout, der sich besonders für druckoptimierte, seitenbasierte Darstellungen eignet – z. B. Rechnungen, Listen oder Berichte mit mehreren Seiten. Er wird mit dem Power BI Report Builder erstellt und im Power BI-Dienst veröffentlicht. Anders als normale Power BI-Berichte sind sie nicht interaktiv, sondern für das Rendering langer Berichte mit hoher Detailtiefe optimiert.
+
 ## Partition
 Eine Partition ist ein logisch abgegrenzter Teilbereich einer Tabelle, der separat geladen, verarbeitet und aktualisiert werden kann. Partitionen ermöglichen eine effizientere Datenverarbeitung, da nur bestimmte Teile einer Tabelle (z. B. aktuelle Daten) regelmäßig aktualisiert werden müssen, während andere (z. B. historische Daten) unverändert bleiben. In Power BI werden Partitionen vor allem bei großen Tabellen oder Hybridtabellen verwendet, um die Performance und Datenaktualität zu optimieren.
+
+## Power BI-Bericht (Bericht)
+Ein Bericht in Power BI besteht aus einer oder mehreren Seiten mit interaktiven Visualisierungen, die auf einem semantischen Modell (Dataset) basieren. Berichte bieten umfangreiche Filter- und Drilldown-Funktionen zur Datenanalyse. Sie werden in Power BI Desktop erstellt und dann im Power BI-Dienst veröffentlicht.
+
+## Power BI-Dataset (Dataset)
+Ein Power BI-Dataset ist der ursprüngliche Begriff für das, was heute offiziell als semantisches Modell bezeichnet wird. Es stellt die zentrale Datenstruktur in Power BI dar, die alle importierten oder verknüpften Daten, Beziehungen, Measures, Berechnungen, Rollen und Metadaten enthält. Ein Dataset kann in mehreren Berichten wiederverwendet und über den Power BI-Dienst geteilt werden.
 
 ## Power Query Editor
 Der Power Query Editor ist eine grafische Benutzeroberfläche in Power BI, mit der sich Daten importieren, bereinigen und transformieren lassen. Alle durchgeführten Transformationen werden im Hintergrund mit der Sprache M (Power Query Formula Language) aufgezeichnet und automatisiert ausgeführt, sobald die Daten aktualisiert werden.
@@ -166,6 +219,9 @@ Ein Primärschlüssel ist eine Spalte oder eine Kombination mehrerer Spalten, di
 
 
 # Q  
+
+## Quickmeasure
+Ein Quickmeasure ist ein vordefiniertes DAX-Muster in Power BI, das über eine grafische Benutzeroberfläche erstellt wird. Es ermöglicht ohne tiefe DAX-Kenntnisse, häufige Berechnungen wie Differenzen, Prozentanteile, laufende Summen oder Rangfolgen einfach zu erstellen. Im Hintergrund wird ein explizites Measure erzeugt, dass bearbeitet werden kann.
 
 # R  
 
@@ -198,6 +254,9 @@ Die Tabellenansicht zeigt die Daten der Tabellen im Power BI-Modell in tabellari
 
 ## Visualisierungsbereich
 Der Visualisierungsbereich in Power BI Desktop ist die rechte Seitenleiste, in der man Visualtypen auswählen, Formatierungen anpassen und Feldzuweisungen (Achsen, Werte, Legenden usw.) für das aktuell ausgewählte Visual konfigurieren kann.
+
+## Vorlage-App (Power BI-Dienst)
+Eine Vorlage-App ist eine vorgefertigte Power BI-App, die von Microsoft oder Drittanbietern bereitgestellt wird und eine vorgefertigte Sammlung von Dashboards, Berichten und Datenmodellen enthält. Diese Apps sind in der Regel für bestimmte Branchen oder Anwendungsfälle konzipiert und ermöglichen eine schnelle Integration und Analyse von Daten.
 
 # W  
 
